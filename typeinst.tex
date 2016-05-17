@@ -81,11 +81,11 @@ In this work in progress report we present Remora, a system for designing intera
 
 
 \section{Introduction}
-There is growing interest in interacting with devices inside the body in the Human Computer Interaction (HCI) research community, as well as in the Body Modification Community. Implanted devices are anticipated to provide opportunities for sensory augmentation, biometric data collection, data-storage or novel HCI applications [1, 2]. This growing interest can be observed looking at workshops at leading HCI conferences\footnote{https://insertables.wordpress.com/},  various self-experimentation projects, such as the Circadia by Grindhouse Wetware [3], or review papers on this very topic [4].
+There is growing interest in interacting with devices inside the body in the Human Computer Interaction (HCI) research community, as well as in the Body Modification Community. Implanted devices are anticipated to provide opportunities for sensory augmentation, biometric data collection, data-storage or novel HCI applications \cite{Holz}, \cite{Hameed}. This growing interest can be observed looking at workshops at leading HCI conferences\footnote{https://insertables.wordpress.com/},  various self-experimentation projects, such as the Circadia by Grindhouse Wetware \cite{Motherboard}, or review papers on this very topic \cite{Heffernan}.
 
 Implanted devices are not new - pacemakers and dental implants date back to the late 1950’s and have since become established in medical practice. Common medical implants include joint replacements, drug delivery systems, cerebral shunts, stents, cardiac monitors and pacemakers, and even brain implants that provide deep brain stimulation to Parkinson patients or treat seizures for epilepsy patients. Implants are also common for plastic surgery purposes, most notably the breast implant, which dates back to the 1960’s.
 
-In parallel to these more established practices, the body modification community has developed methods, practices and technologies of their own, including the development of subdermal implants. These are usually injection molded silicone objects which are implanted under the skin for aesthetic purposes. The manufacturing process of these subdermal implants allows encapsulating objects inside the implant. This enables implantation of unconventional objects, such as the ashes of a loved one or electronic circuitry. There is a trend amongst self-identified ‘grinders’ or ‘wet-ware hackers’ to appropriate these methods for the design of implantable electronic devices [3, 4]. 
+In parallel to these more established practices, the body modification community has developed methods, practices and technologies of their own, including the development of subdermal implants. These are usually injection molded silicone objects which are implanted under the skin for aesthetic purposes. The manufacturing process of these subdermal implants allows encapsulating objects inside the implant. This enables implantation of unconventional objects, such as the ashes of a loved one or electronic circuitry. There is a trend amongst self-identified ‘grinders’ or ‘wet-ware hackers’ to appropriate these methods for the design of implantable electronic devices  \cite{Motherboard}, \cite{Heffernan}.
 
 
 \begin{figure}
@@ -97,18 +97,18 @@ In parallel to these more established practices, the body modification community
 
 Inspired by body modification culture, and in a somewhat worried reaction to the design of devices implanted by ‘grinders’, we are designing Remora (Figure 1), an eco-system for the development of implantable devices. This eco-system conforms to the constraints a body modification artist is faced with when producing and implanting an electronic device. Remora is therefore not intended to improve upon, or even compare to the current state of the art in electronic implantable medical devices. 
 
-Remora aims to provide a platform with multiple failsafe and redundancy mechanisms around which to design interactive, subdermal devices. We anticipate this to find use in the body modification community, however we also believe that various research communities will benefit from such a platform. For example, Remora would allow research into sub-cutanious sensing [1] to progress within living bodies, and enable novel human computer interaction methods and advanced biometric monitoring. 
+Remora aims to provide a platform with multiple failsafe and redundancy mechanisms around which to design interactive, subdermal devices. We anticipate this to find use in the body modification community, however we also believe that various research communities will benefit from such a platform. For example, Remora would allow research into sub-cutanious sensing \cite{Holz} to progress within living bodies, and enable novel human computer interaction methods and advanced biometric monitoring.
 
 Remora will consist of a development environment for designing ultra-low power applications, as well as a wireless bootloader with redundancy and self-monitoring functions. This will be paired with hardware module designs which can be combined based on the requirements of a given application. The resulting device would then be encapsulated in parylene C coating and embedded in implant grade silicone. The resulting silicone object can be inserted under the skin using methods established by body modification artists.
  
 \section{Related Work}
 \subsection{Posthuman Bodies}
-Art that challenges the traditional role of the body is becoming succeedingly more mainstream. French artist Orlan has exhibited her plastic surgery performance at the Guggenheim in NYC, while Australian artist Stelarc has become a common reference at human computer interaction conferences. Stelarc's works explore the theme of agency beyond the body. His artworks often involve performances in which control over his limbs is handed to the audience or to random signals generated by internet traffic. He also uses robotic appendixes to expand his body and has experimented with implantation of extra sensory organs [5].
+Art that challenges the traditional role of the body is becoming succeedingly more mainstream. French artist Orlan has exhibited her plastic surgery performance at the Guggenheim in NYC, while Australian artist Stelarc has become a common reference at human computer interaction conferences. Stelarc's works explore the theme of agency beyond the body. His artworks often involve performances in which control over his limbs is handed to the audience or to random signals generated by internet traffic. He also uses robotic appendixes to expand his body and has experimented with implantation of extra sensory organs \cite{PingBody}.
 
-While artists such as Stelarc and Orlan are becoming more mainstream, the body modification community still strongly identifies as a counterculture movement. One of the earliest functional implants common within the body-modification community is a magnet. An implanted magnet vibrates when the implantee is subjected to a varying electromagnetic field. This might occur when walking through security systems or in the close proximity of electric motors or transformers. The first magnetic implants were implanted by Samppa von Cyborg in 2000. 
-Kevin Warwick experimented with direct communication between the nervous system of two implantees. He used a 100 pin micro-array as an electrical interface with the nervous system of each implantee. Nervous impulses were then wirelessly transmitted between them. Warwick was also one of the first to implant RFID tags [6]. RFID and NFC implants have been further popularized by Amal Graafstra [7].
+While artists such as Stelarc and Orlan are becoming more mainstream, the body modification community still strongly identifies as a counterculture movement. One of the earliest functional implants common within the body-modification community is a magnet. An implanted magnet vibrates when the implantee is subjected to a varying electromagnetic field. This might occur when walking through security systems or in the close proximity of electric motors or transformers. The first magnetic implants were implanted by Samppa von Cyborg in 2000.
+Kevin Warwick experimented with direct communication between the nervous system of two implantees. He used a 100 pin micro-array as an electrical interface with the nervous system of each implantee. Nervous impulses were then wirelessly transmitted between them. Warwick was also one of the first to implant RFID tags \cite{Warwick}. RFID and NFC implants have been further popularized by Amal Graafstra \cite{Graafstra}.
 
-The methods developed by the body modification community have recently been appropriated by self identified ‘grinders’, ‘wet-ware-’ or ‘bio hackers’. Most notably Tim Cannon and Grindhouse Wetware have developed a temperature monitoring device and an implantable silicone object illuminated from the inside. While both device types have been implanted, they were since removed due to safety concerns [3].
+The methods developed by the body modification community have recently been appropriated by self identified ‘grinders’, ‘wet-ware-’ or ‘bio hackers’. Most notably Tim Cannon and Grindhouse Wetware have developed a temperature monitoring device and an implantable silicone object illuminated from the inside. While both device types have been implanted, they were since removed due to safety concerns \cite{Motherboard}.
 
 \subsection{Development Environments}
 There is an ever increasing number of ecosystems and dev-boards that support non-experts in the development of digital devices. Most prominent among them Raspberry Pi and Arduino. Neither however meet the ultra-low power requirements and the compact size required of an implanted device. Other interesting systems include the Bluetooth Low Energy (BLE) development boards by RedBearLabs \footnote{http://redbearlab.com/}  or products based on Simblee \footnote{https://www.simblee.com/}. These solutions have relatively low power consumption, but the form-factor of the devices by RedBearLabs and the closed source of the Simblee protocol are also problematic. There are various upcoming development kits based around the new nRF52, such as the BMD-300  by Rigado \footnote{https://www.rigado.com/product/bmd-300/} with even lower power consumption. While such modules have optimized power consumption, they do not provide the close coupling with wireless charging and battery monitoring which we envision.
@@ -162,20 +162,24 @@ We have implemented the three core modules and the inertial sensing module. We h
 \section{Conclusion}
 In this work in progress report, we presented Remora, an ecosystem for designing implantable devices. Rather than adding to the tradition of mainstream implantable devices, Remora builds on knowledge and practices collected by body modification artists. Remora is designed for these artists to create their own implants, but will also be a platform for researchers interested in creating hybrid systems. Our design is primarily focused on providing series of monitoring and redundancy features, aimed at protecting the implantee and providing the designer with as much debug information as possible, should an error occur. We have so far designed and implemented a proof-of concept device. Future work will expand upon these and include empirical studies testing the safety and reliability of our designs and evaluating interaction design with and for implanted devices.
 
-\section{References}
-\begin{enumerate}
-  \item Holz, C., Grossman, T.,  Fitzmaurice, G.,  Agur A.: Implanted user interfaces. Proceedings of the 2012 ACM annual conference on Human Factors in Computing Systems (2012) 
-  \item Hameed, J.,  Harrison, I.,  Gasson, M.N.,  Warwick, K.:  A novel human-machine interface using subdermal magnetic implants. 2010 IEEE 9th International Conference on Cyberntic Intelligent Systems (2010) 
-  \item The Half Life of Body Hacking | Motherboard.\\ http://motherboard.vice.com/read/the-half-life-of-body-hacking.\\ Accessed 20 Mar 2016
-  \item Heffernan, K.J.,  Vetere, F.:  You Put What, Where ? Hobbyist Use of Insertable Devices.  Proceedings of the 2016 ACM annual conference on Human Factors in Computing Systems (2016)
-  \item	Ping Body - Institute for the Unstable Media. http://v2.nl/events/ping-body. Accessed 21 Oct 2015
-  \item	Warwick, K.,  Ruiz V On: linking human and machine brains. Neurocomputing  (2008) 
-  \item Graafstra, A.:   Hands On: How radio-frequency identifion and I got personal. IEEE Spectrum 18 23 (2007)
 
-\end{enumerate}
+\begin{thebibliography}{7}
 
+\bibitem{Holz} Holz, C., Grossman, T., Fitzmaurice, G., Agur A.: Implanted user interfaces. Proceedings of the 2012 ACM annual conference on Human Factors in Computing Systems (2012)
 
+\bibitem{Hameed} Hameed, J., Harrison, I., Gasson, M.N., Warwick, K.: A novel human-machine interface using subdermal magnetic implants. 2010 IEEE 9th International Conference on Cyberntic Intelligent Systems (2010)
 
+\bibitem{Motherboard} The Half Life of Body Hacking | Motherboard.\\ http://motherboard.vice.com/read/the-half-life-of-body-hacking.\\ Accessed 20 Mar 2016
+
+\bibitem{Heffernan} Heffernan, K.J., Vetere, F.: You Put What, Where ? Hobbyist Use of Insertable Devices. Proceedings of the 2016 ACM annual conference on Human Factors in Computing Systems (2016)
+
+\bibitem{PingBody} Ping Body - Institute for the Unstable Media. http://v2.nl/events/ping-body. Accessed 21 Oct 2015
+
+\bibitem{Warwick} Warwick, K., Ruiz V On: linking human and machine brains. Neurocomputing (2008)
+
+\bibitem{Graafstra} Graafstra, A.: Hands On: How radio-frequency identifion and I got personal. IEEE Spectrum 18 23 (2007)
+
+\end{thebibliography}
 
 
 \end{document}
