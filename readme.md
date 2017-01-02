@@ -1,5 +1,8 @@
 ## Developing an Ecosystem for Interactive Electronic Implants
 
+![device.png](https://raw.githubusercontent.com/honnet/livingMachines16/master/device.png)
+
+
 ### Abstract
 
 There is growing interest in interacting with devices inside the body in the Human Computer Interaction (HCI) research community, as well as in the Body Modification Community. Implanted devices are anticipated to provide opportunities for sensory augmentation, biometric data collection, data-storage or novel HCI applications. This growing interest can be observed looking at workshops at leading HCI conferences, various self-experimentation projects, such as the Circadia by Grindhouse Wetware, or review papers on this very topic.
